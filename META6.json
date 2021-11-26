@@ -1,0 +1,25 @@
+{
+  "auth": "cpan:ELIZABETH",
+  "authors": [
+    "Elizabeth Mattijsen"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "OS independent interface to a browser",
+  "license": "Artistic-2.0",
+  "name": "App::Browser",
+  "perl": "6.d",
+  "provides": {
+    "App::Browser": "lib/App/Browser.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "",
+  "tags": [
+  ],
+  "test-depends": [
+  ],
+  "version": "0.0.1"
+}

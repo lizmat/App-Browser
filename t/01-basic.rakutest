@@ -1,0 +1,8 @@
+use Test;
+use App::Browser;
+
+plan 1;
+
+ok &browse, "module exported &browse";
+
+# vim: expandtab shiftwidth=4

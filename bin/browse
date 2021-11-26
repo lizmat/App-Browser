@@ -1,0 +1,5 @@
+use App::Browse:ver<0.0.1>:auth<zef:lizmat>;
+
+my &MAIN := &browse;
+
+# vim: expandtab shiftwidth=4
