@@ -55,7 +55,7 @@ browse('raku.org', 'firefox');  # visit the Raku web site with Firefox
 App::Browser provides a simple generic interface to starting a browser
 for a given URL.  It exports the C<browse> function that takes a C<URL>
 as the first parameter, and an optional browser identification as a
-second parameter (which defaults to the C<APP_BROWSER> environment variable..
+second parameter (which defaults to the C<APP_BROWSER> environment variable).
 
 The C<browse> function returns a C<Proc> object, or C<Nil> if something
 went wrong.  Whether it makes sense to do something with that object, is
