@@ -1,5 +1,12 @@
-use App::Browse:ver<0.0.1>:auth<zef:lizmat>;
+use App::Browser:ver<0.0.1>:auth<zef:lizmat>;
 
-my &MAIN := &browse;
+multi sub MAIN($url) {
+    note "Failed to browse $url with default browser"
+      without browse($url);
+}
+multi sub MAIN($url, $browser) {
+    note "Failed to browse $url with $browser"
+      without browse($url, $browser);
+}
 
 # vim: expandtab shiftwidth=4

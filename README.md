@@ -25,6 +25,12 @@ The `browse` function returns a `Proc` object, or `Nil` if something went wrong.
 
 It also exports a command line script `browse` that will take a `URL` and an optional browser identifier (e.g. `chrome`, `firefox`, `safari`).
 
+    $ browse raku.org
+
+    $ APP_BROWSER=chrome browse raku.org
+
+    $ browse raku.org firefox
+
 WORK IN PROGRESS
 ================
 
@@ -34,6 +40,8 @@ AUTHOR
 ======
 
 Elizabeth Mattijsen <liz@raku.rocks>
+
+Source can be located at: https://github.com/lizmat/App-Browser . Comments and Pull Requests are welcome.
 
 COPYRIGHT AND LICENSE
 =====================

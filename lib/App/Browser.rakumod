@@ -64,6 +64,12 @@ unsure.
 It also exports a command line script C<browse> that will take a C<URL>
 and an optional browser identifier (e.g. C<chrome>, C<firefox>, C<safari>).
 
+    $ browse raku.org
+
+    $ APP_BROWSER=chrome browse raku.org
+
+    $ browse raku.org firefox
+
 =head1 WORK IN PROGRESS
 
 Please note that this is a continuing work in progress.  At the moment of
@@ -74,6 +80,9 @@ need some experienced users to get this right.
 =head1 AUTHOR
 
 Elizabeth Mattijsen <liz@raku.rocks>
+
+Source can be located at: https://github.com/lizmat/App-Browser . Comments and
+Pull Requests are welcome.
 
 =head1 COPYRIGHT AND LICENSE
 
