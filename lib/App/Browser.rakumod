@@ -2,6 +2,7 @@ my sub expand($url) {
     $url.contains('://') ?? $url !! "https://$url"
 }
 
+my proto sub linux(|) {*}
 my multi sub linux($url, '') {
     X::NYI.new(feature => "opening default browser on Linux").throw
 }
@@ -10,15 +11,19 @@ my multi sub linux($url, $browser) {
     X::NYI.new(feature => "opening $Browser on Linux").throw
 }
 
-my multi sub macosx($url, '') {
+my proto sub macos(|) {*}
+my multi sub macos($url, '') {
     run 'open', expand($url)
 }
-my multi sub macosx($url, 'chrome') {
+my multi sub macos($url, 'chrome') {
     run 'open', '-a', 'Google Chrome', expand($url)
 }
-my multi sub macosx($url, $browser) {
+my multi sub macos($url, $browser) {
     run 'open', '-a', $browser.tc, expand($url)
 }
+
+# Older versions still have the X
+my constant &macosx = &macos;
 
 my proto sub browse(|) is export {*}
 my multi sub browse($url) {
@@ -84,9 +89,13 @@ Elizabeth Mattijsen <liz@raku.rocks>
 Source can be located at: https://github.com/lizmat/App-Browser . Comments and
 Pull Requests are welcome.
 
+If you like this module, or what I’m doing more generally, committing to a
+L<small sponsorship|https://github.com/sponsors/lizmat/>  would mean a great
+deal to me!
+
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2021 Elizabeth Mattijsen
+Copyright 2021 - 2022 Elizabeth Mattijsen
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 

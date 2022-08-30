@@ -19,7 +19,7 @@ browse('raku.org', 'firefox');  # visit the Raku web site with Firefox
 DESCRIPTION
 ===========
 
-App::Browser provides a simple generic interface to starting a browser for a given URL. It exports the `browse` function that takes a `URL` as the first parameter, and an optional browser identification as a second parameter (which defaults to the `APP_BROWSER` environment variable..
+App::Browser provides a simple generic interface to starting a browser for a given URL. It exports the `browse` function that takes a `URL` as the first parameter, and an optional browser identification as a second parameter (which defaults to the `APP_BROWSER` environment variable).
 
 The `browse` function returns a `Proc` object, or `Nil` if something went wrong. Whether it makes sense to do something with that object, is unsure.
 
@@ -43,10 +43,12 @@ Elizabeth Mattijsen <liz@raku.rocks>
 
 Source can be located at: https://github.com/lizmat/App-Browser . Comments and Pull Requests are welcome.
 
+If you like this module, or what I’m doing more generally, committing to a [small sponsorship](https://github.com/sponsors/lizmat/) would mean a great deal to me!
+
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright 2021 Elizabeth Mattijsen
+Copyright 2021 - 2022 Elizabeth Mattijsen
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
