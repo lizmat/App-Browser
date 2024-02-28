@@ -4,12 +4,15 @@ my sub expand($url) {
 
 my proto sub linux(|) {*}
 my multi sub linux($url, '') {
-    X::NYI.new(feature => "opening default browser on Linux").throw
+    run 'xdg-open', expand($url)
 }
 my multi sub linux($url, $browser) {
     my $Browser = $browser.tc;
     X::NYI.new(feature => "opening $Browser on Linux").throw
 }
+
+# it's possible that other distros should also be included here...
+my constant &debian = &linux;
 
 my proto sub macos(|) {*}
 my multi sub macos($url, '') {
