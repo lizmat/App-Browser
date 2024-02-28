@@ -2,6 +2,9 @@ Revision history for App-Browser
 
 {{$NEXT}}
 
+0.0.3  2024-02-28T18:08:49+01:00
+    - Add support for debian, Humberto Massa++
+
 0.0.2  2022-08-30T04:54:28+02:00
     - Make sure newer versions of MacOS are also understood
 
