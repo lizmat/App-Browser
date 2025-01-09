@@ -1,6 +1,8 @@
 Revision history for App-Browser
 
 {{$NEXT}}
+
+0.0.4  2025-01-09T13:23:25+01:00
     - Add CI badge for each OS
     - Update copyright year
 
